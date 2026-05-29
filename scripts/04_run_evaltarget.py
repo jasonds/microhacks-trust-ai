@@ -137,7 +137,7 @@ if __name__ == "__main__":
     # Configure evaluator model
     model_config = AzureOpenAIModelConfiguration(
         azure_endpoint=os.environ.get("AZURE_OPENAI_ENDPOINT") or os.environ.get("AZURE_AI_ENDPOINT"),
-        azure_deployment=os.environ.get("AZURE_EVAL_MODEL", "gpt-4o"),
+        azure_deployment=os.environ.get("gpt-4o"),
         api_version="2024-12-01-preview",
     )
     
